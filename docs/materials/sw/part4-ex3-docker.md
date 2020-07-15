@@ -25,7 +25,7 @@ Submit File Changes
 		universe = docker
 		docker_image = python:3.7.0-stretch
 
-	Here we are requesting HTCondor's Docker universe and using a pre-built python image that, by default, will be pulled from a public website of Docker images called DockerHub.  The requirements line will ensure that we run on computers whose operating system can support Docker.
+	Here we are requesting HTCondor's Docker universe and using a pre-built python image that, by default, will be pulled from a public website of Docker images called DockerHub.  Behind the scenes, HTCondor will ensure that we run on computers whose operating system can support Docker.
 
 1.  Adjust the executable and arguments lines. The executable can now be the Python script itself, with the appropriate arguments: 
 

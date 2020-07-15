@@ -159,9 +159,12 @@ We're almost ready! We need two more pieces to run a OpenBUGS job.
 		username@learn $ wget http://proxy.chtc.wisc.edu/SQUID/osgschool20/openbugs_files.tar.gz
 		username@learn $ tar -xzf openbugs_files.tar.gz
 
-1.  Our last step is to create a submit file for our Open BUGS job. Think about which lines this submit file will need. Make a copy of a previous submit file (you could use the blast submit file from a [previous exercise](/materials/sw/part1-ex1-download) as a base) and modify it as you think necessary.
+1.  Our last step is to create a submit file for our Open BUGS job. Think about which lines this submit file will need. Make a copy of a previous submit file (you could use the blast submit file from a [previous exercise](/materials/sw/part1-ex1-download) as a base) and modify it as you think necessary. 
 
-1.  The two most important lines to modify for this job are listed below; check them against your own submit file: 
+1. Because this job will be running in the CHTC pool (not the Open Science Grid), we 
+can remove the requirement requesting "RHEL7" -- the right LINUX version will be requested automatically. 
+
+1.  The other two most important lines to modify for this job are listed below; check them against your own submit file: 
 
         :::file
         executable = run_openbugs.sh
